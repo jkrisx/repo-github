@@ -1,0 +1,2 @@
+Set-ExecutionPolicy Unrestricted -force -Confirm:$false
+cd $env:temp | Invoke-Expression; Invoke-RestMethod -Method Get -URI https://raw.githubusercontent.com/TheJumpCloud/support/master/scripts/windows/InstallWindowsAgent.ps1 -OutFile InstallWindowsAgent.ps1 | Invoke-Expression; ./InstallWindowsAgent.ps1 -JumpCloudConnectKey "61de90d83904c130627ab9b0f79a296d427811c4"
